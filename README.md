@@ -4,7 +4,7 @@ A stylish, touch-responsive 3D slider featuring top K-pop idols with autoplay vi
 
 ## 🔗 Live Site
 
-[Visit Now](https://9940-pg.github.io/3D-K-pop-slideshow/)
+[Visit Now](https://9940-pg.github.io/3D-K-pop-Slideshow/)
 
 ## ✨ Features
 
