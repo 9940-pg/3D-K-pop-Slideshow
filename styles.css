@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'bungee shade', sans-serif;
+  background: linear-gradient(to right, #b61968, #7928ca);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+}
+
+.slider {
+  position: relative;
+  width: 90%;
+  max-width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel {
+  display: flex;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+}
+
+
+.card {
+  width: 80vw;
+  max-width: 300px;
+  /* object-fit: cover; */
+  margin: 0 10px;
+  padding: 15px;
+  background: rgba(0,0,0,0.7);
+  border-radius: 15px;
+  color: white;
+  text-align: center;
+  transform: scale(0.8);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  opacity: 0.5;
+}
+
+
+.card video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  /* object-fit: cover; */
+}
+/* .card:hover {
+  background: rgb(249, 246, 246);
+  color:black;
+} */
+
+
+.card h2 {
+  font-family: 'Zen Dots', 'Orbitron', sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #fff;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #ff00ff,
+    0 0 20px #ed09d7,
+    0 0 30px #eb1a1aa7;
+}
+
+.card.active {
+  transform: scale(1.1) rotateY(0deg);
+  opacity: 1;
+  z-index: 2;
+}
+
+
+.container {
+  width: 100%;
+  max-width: 800px;
+   
+}
+@media (max-width: 600px) {
+  .slider {
+    flex-direction: column;
+  }
+
+  .carousel {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90vw;
+    margin: 20px 0;
+    transform: scale(1);
+    opacity: 1;
+  }
+
+}
